@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">تیم یار</string>
+    <string name="error">خطا در انجام درخواست</string>
+    <string name="email">ایمیل</string>
+    <string name="password">رمز عبور</string>
+    <string name="login_successful">ورود موفق  :)</string>
+    <string name="login">ورود</string>
+</resources>

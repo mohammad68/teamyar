@@ -14,8 +14,6 @@ import com.teamyar.teamyarTest.R;
 import com.teamyar.teamyarTest.UI.WebViewActivity.WebViewActivity;
 import com.teamyar.teamyarTest.Utils;
 
-import okhttp3.internal.Util;
-
 
 public class LoginActivity extends AppCompatActivity  {
 

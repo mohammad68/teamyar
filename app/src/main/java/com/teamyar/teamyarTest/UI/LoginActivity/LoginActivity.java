@@ -12,8 +12,9 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 import com.teamyar.teamyarTest.R;
 import com.teamyar.teamyarTest.UI.WebViewActivity.WebViewActivity;
+import com.teamyar.teamyarTest.Utils;
 
-
+import okhttp3.internal.Util;
 
 
 public class LoginActivity extends AppCompatActivity  {
@@ -84,8 +85,29 @@ public class LoginActivity extends AppCompatActivity  {
         prgLoading = findViewById(R.id.prg);
     }
 
+    /**
+     * Check validation of form
+     * @return boolean (is valid)
+     */
     private boolean isValidForm() {
-        return true;
+        boolean result = true;
+
+        // check email
+        String email = edtEmail.getText().toString();
+        if(email.isEmpty() || !Utils.isEmailValid(email)){
+            edtEmail.setError(getString(R.string.plzEnterYourEmailCorrectly));
+            result = false;
+        }
+
+        //check pass
+        String pass = edtPass.getText().toString();
+        if(pass.isEmpty() || pass.length() < 8){
+            edtPass.setError(getString(R.string.plzEnterYourPasswordCorrectly));
+            result = false;
+        }
+
+        return result;
+
     }
     private void loading(boolean isLoading){
         edtEmail.setEnabled(!isLoading);

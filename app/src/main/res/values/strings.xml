@@ -5,4 +5,6 @@
     <string name="password">رمز عبور</string>
     <string name="login_successful">ورود موفق  :)</string>
     <string name="login">ورود</string>
+    <string name="plzEnterYourEmailCorrectly">لطفا ایمیل خود را صحیح وارد کنید</string>
+    <string name="plzEnterYourPasswordCorrectly">لطفا کلمه عبور خود را صحیح وارد کنید</string>
 </resources>
